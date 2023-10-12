@@ -80,3 +80,12 @@ terraform show      # Spit out the whole known state of resources
                     # Add the -json flag to get JSON output
 ```
 
+## Further things to do
+
+* Add a second container, e.g PostgreSQL
+* Add a Docker Private Network https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs/resources/network
+* Put the nginx & postgres containers in the private network
+* Add a phpPgAdmin container, connect it to the postgres container with environment variables, to test access over the private network https://hub.docker.com/r/dockage/phppgadmin/
+* Explore the other resources / data sources in the Docker Provider https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs
+* Explore other providers, e.g. Dokku https://registry.terraform.io/providers/aliksend/dokku/latest/docs  or Azure https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs
+
